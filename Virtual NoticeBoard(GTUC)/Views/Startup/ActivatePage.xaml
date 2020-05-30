@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VirtualNoticeBoardGTUC.Views.Startup.ActivatePage">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <StackLayout  VerticalOptions="CenterAndExpand" Padding="10" >
+              <Label FontSize="Medium" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="CenterAndExpand" 
+                     Margin="0,0,0,5"
+                     FormattedText="Ghana Technology university college"/>
+
+                <Label 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="CenterAndExpand" 
+                     Margin="0,0,0,5"
+                       FontAttributes="Bold"
+                       FontSize="Small"
+                     FormattedText="Virtual Notice Board "/>
+
+                  
+             <Image x:Name="logoImage"
+                    Source="logo.png"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    
+                    Aspect="AspectFit"
+                    Margin="0,0,10,0"/>
+            
+            <Label Text=" Activate Account" FontSize="Large" Margin="0,0,0,50"  HorizontalOptions="Center"/>
+                
+                <Entry Placeholder="Index Number" TextColor="Black" x:Name="indexEntry"/>
+                <Entry Placeholder="Full Name" TextColor="Black" x:Name="fullNameEntry"/>
+
+                <Entry Placeholder="Course" TextColor="Black" x:Name="courseEntry"/>
+                <Entry Placeholder="Level" TextColor="Black" x:Name="levelEntry" Keyboard="Numeric"/>
+                <Button BackgroundColor="#EBD700" Text="Next" TextColor="Azure" />
+                
+                </StackLayout>
+             </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

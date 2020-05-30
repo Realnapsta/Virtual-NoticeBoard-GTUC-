@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:pages="clr-namespace:VirtualNoticeBoardGTUC.Views.Startup"
+       x:Class="VirtualNoticeBoardGTUC.Views.Startup.StartUpShell">
+
+     <Shell.Resources>
+     <ResourceDictionary>
+           <Color x:Key="NavigationPrimary">#F9FF00</Color>
+           <Style x:Key="BaseStyle" TargetType="Element">
+               <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+               <Setter Property="Shell.ForegroundColor" Value="#0E0046" />
+               <Setter Property="Shell.TitleColor" Value="#0E0046" />
+               <Setter Property="Shell.DisabledColor" Value="#C3C3C3" />
+               <Setter Property="Shell.UnselectedColor" Value="#C3C3C3" />
+               <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+               <Setter Property="Shell.TabBarForegroundColor" Value="#0E0046"/>
+               <Setter Property="Shell.TabBarUnselectedColor" Value="#C3C3C3"/>
+               <Setter Property="Shell.TabBarTitleColor" Value="#0E0046"/>
+           </Style>
+           <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+       </ResourceDictionary>
+   </Shell.Resources>
+
+    <TabBar>
+        <Tab Title= "Login" Icon="">
+            <ShellContent>
+                <pages:LoginPage/>
+
+            </ShellContent>
+        </Tab>
+
+        <Tab Title= "Activate Account" Icon="">
+            <ShellContent>
+                <pages:ActivatePage/>
+
+            </ShellContent>
+        </Tab>
+    </TabBar>
+    
+</Shell>
