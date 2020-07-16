@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VirtualNoticeBoardGTUC.Views.Main.DisplayInfoPage"
+             Title="Student Info">
+
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="10">
+
+        <Label Text="Name : Adwoa Annuah " x:Name="fullNamelbl" FontSize="Large"/>
+            <Label Text="Index : 04TU91234" x:Name="indexlbl" FontSize="Large"/>
+            <Label Text="Level : 400" x:Name="levellbl" FontSize="Large"/>
+            <Label Text="Course : BIT-TU" x:Name="courselbl" FontSize="Large"/>
+            <Label Text="Campus : Tesano" x:Name="campuslbl" FontSize="Large"/>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

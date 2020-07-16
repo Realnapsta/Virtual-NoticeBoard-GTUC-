@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:VirtualNoticeBoardGTUC.ViewModels"
+             x:Class="VirtualNoticeBoardGTUC.Views.Main.AnnounceMentsPage"
+             Title="General Announcements" Padding="5,0">
+
+    <ContentPage.BindingContext>
+        <vm:NoticeViewModel/>
+    </ContentPage.BindingContext>
+    
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <CollectionView ItemsSource= "{Binding Notices}"
+                        SelectionMode="Single"
+                        x:Name="CVNotices">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical" Margin="4" Spacing="2">
+
+                        <Label Text="{Binding Name}" FontSize="Title"/>
+                        <Label TextColor="DarkGray" Text="{Binding IssuedDate}" FontSize="Small"/>
+                        <Label Text="{Binding Tags}" FontSize="Micro"/>
+
+                        
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    
+</ContentPage>
+ 
