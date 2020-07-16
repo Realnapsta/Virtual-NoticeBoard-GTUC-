@@ -25,14 +25,14 @@
    </Shell.Resources>
 
     <TabBar>
-        <Tab Title= "Login" Icon="">
+        <Tab Title= "Login" Icon="login_icon.png">
             <ShellContent>
                 <pages:LoginPage/>
 
             </ShellContent>
         </Tab>
 
-        <Tab Title= "Activate Account" Icon="">
+        <Tab Title= "Activate Account" Icon="activate_icon.png">
             <ShellContent>
                 <pages:ActivatePage/>
 

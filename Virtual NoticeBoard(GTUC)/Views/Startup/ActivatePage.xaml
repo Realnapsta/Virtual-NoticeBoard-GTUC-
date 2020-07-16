@@ -38,8 +38,12 @@
 
                 <Entry Placeholder="Course" TextColor="Black" x:Name="courseEntry"/>
                 <Entry Placeholder="Level" TextColor="Black" x:Name="levelEntry" Keyboard="Numeric"/>
-                <Button BackgroundColor="#EBD700" Text="Next" TextColor="Azure" />
-                
+                <Entry Placeholder="Enter pin" IsPassword="True" TextColor="Black" x:Name="pinEntry" Keyboard="Numeric"/>
+                 <Entry Placeholder="Confirm pin" IsPassword="True" TextColor="Black" x:Name="confirmPinEntry" Keyboard="Numeric"/>
+                <Button BackgroundColor="#EBD700" Text="Next" x:Name="Activatebtn" TextColor="Azure" Clicked="Activate_Button_Clicked"/>
+
+                <ActivityIndicator x:Name="activityindicator1" IsRunning="{Binding IsBusy}" VerticalOptions="Center" HorizontalOptions="Center" Color="Lime" />
+
                 </StackLayout>
              </StackLayout>
 

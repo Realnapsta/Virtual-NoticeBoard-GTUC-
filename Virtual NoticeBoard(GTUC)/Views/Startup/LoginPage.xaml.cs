@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using VirtualNoticeBoardGTUC.Views.Main;
 using Xamarin.Forms;
 
 namespace VirtualNoticeBoardGTUC.Views.Startup
@@ -9,7 +9,7 @@ namespace VirtualNoticeBoardGTUC.Views.Startup
     {
         public void StudentMainPage_Button_Clicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Application.Current.MainPage = new MainShell();
         }
 
         public LoginPage()

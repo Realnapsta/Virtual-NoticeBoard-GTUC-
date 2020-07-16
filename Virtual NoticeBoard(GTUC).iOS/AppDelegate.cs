@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
 
 namespace Virtual_NoticeBoard_GTUC_.iOS
 {
@@ -22,7 +24,14 @@ namespace Virtual_NoticeBoard_GTUC_.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+           // Forms.SetFlags("CollectionView_Experimental"); 
             global::Xamarin.Forms.Forms.Init();
+            string dbName = "GTUC.sqlite";
+            string folderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "Library");
+            string fullPath = Path.Combine(folderPath, dbName);
+
+            // CurrentPlatform.Init();
+            //Rg.Plugins.Popup.Popup.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

@@ -35,8 +35,12 @@
                     Margin="0,0,10,0"/>
             
             <Label Text=" welcome, Student" FontSize="Large" Margin="0,0,0,50"  HorizontalOptions="Center"/>
-                
+
+                <Label Margin="4">Index number</Label>
                 <Entry Placeholder="Index Number" TextColor="Black" x:Name="StudentMainPageEntry"/>
+
+                <Label Margin="4">Secret Pin</Label>
+                 <Entry Placeholder="Pin" IsPassword="True" TextColor="Black" x:Name="StudentMainPagePinEntry"/>
                 
                 <Button BackgroundColor="#EBD700" Text="Next" TextColor="Azure" Clicked="StudentMainPage_Button_Clicked" />
                 
